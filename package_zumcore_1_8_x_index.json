@@ -2,7 +2,7 @@
   "packages": [
     {
       "name": "ZUM-Core",
-      "maintainer": "BQ",
+      "maintainer": "BQ Educación",
       "websiteURL": "https://github.com/BQ/ZUMCore",
       "email": "soporte.bitbloq@bq.com",
       "help": {
@@ -78,7 +78,7 @@
           "checksum": "SHA-256:44aba550e07d82a80b930fde76c5062556eb57216c29e0e0204340041caec8ef",
           "size": "218330",
           "boards": [
-            {"name": "ZUM Core"}
+            {"name": "ZUM Core 2"}
           ],
           "toolsDependencies": [
             {
