@@ -15,12 +15,6 @@
 #ifndef _SPI0_H_
 #define _SPI0_H_
 
-#define SPIF0   7
-#define DORD0   5
-#define SPIE0   7
-#define MSTR0   4
-#define SPE0    6
-
 class SPIClass {
 public:
   // Initialize the SPI library

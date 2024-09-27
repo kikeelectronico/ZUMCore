@@ -40,47 +40,6 @@
 #define TWI_SRX   3
 #define TWI_STX   4
 
-#define TWBR0   _SFR_MEM8(0xB8)
-
-#define TWSR0   _SFR_MEM8(0xB9)
-#define TWPS00  0
-#define TWPS01  1
-#define TWS03   3
-#define TWS04   4
-#define TWS05   5
-#define TWS06   6
-#define TWS07   7
-
-#define TWAR0   _SFR_MEM8(0xBA)
-#define TWGCE0  0
-#define TWA00   1
-#define TWA01   2
-#define TWA02   3
-#define TWA03   4
-#define TWA04   5
-#define TWA05   6
-#define TWA06   7
-
-#define TWDR0   _SFR_MEM8(0xBB)
-
-#define TWCR0   _SFR_MEM8(0xBC)
-#define TWIE0   0
-#define TWEN0   2
-#define TWWC0   3
-#define TWSTO0  4
-#define TWSTA0  5
-#define TWEA0   6
-#define TWINT0  7
-
-#define TWAMR0  _SFR_MEM8(0xBD)
-#define TWAM00  1
-#define TWAM01  2
-#define TWAM02  3
-#define TWAM03  4
-#define TWAM04  5
-#define TWAM05  6
-#define TWAM06  7
-
 typedef struct
 {
   volatile uint8_t *twbr; // bit rate register
@@ -162,4 +121,3 @@ void twi_stop(twi_descriptor_t *p_twi);
 void twi_releaseBus(twi_descriptor_t *p_twi);
 
 #endif /* twi_h */
-
