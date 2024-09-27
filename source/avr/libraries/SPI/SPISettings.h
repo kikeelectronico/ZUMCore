@@ -81,6 +81,8 @@
 // #define SPI2X  SPI2X0
 // #define WCOL  WCOL0
 // #define SPIF  SPIF0
+#define SPDR SPDR0
+#define SPSR SPSR0
 
 
 class SPISettings {
@@ -164,7 +166,7 @@ private:
 
   uint8_t spcr;
   uint8_t spsr;
-  friend class SPI0Class; // Allow SPI0Class access to spcr & spsr.
+  friend class SPIClass; // Allow SPIClass access to spcr & spsr.
   friend class SPI1Class; // Allow SPI1Class access to spcr & spsr.
 };
 

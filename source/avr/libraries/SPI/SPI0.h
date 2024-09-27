@@ -16,7 +16,7 @@
 #define _SPI0_H_
 
 
-class SPI0Class {
+class SPIClass {
 public:
   // Initialize the SPI library
   static void begin();
@@ -182,7 +182,7 @@ private:
   #endif
 };
 
-extern SPI0Class SPI0;
+extern SPIClass SPI0;
 #define SPI  SPI0
 
 #endif /* _SPI0_H_ */

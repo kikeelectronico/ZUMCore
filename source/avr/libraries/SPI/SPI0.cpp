@@ -14,17 +14,17 @@
 
 #include "SPI.h"
 
-SPI0Class SPI0;
+SPIClass SPI0;
 
-uint8_t SPI0Class::initialized = 0;
-uint8_t SPI0Class::interruptMode = 0;
-uint8_t SPI0Class::interruptMask = 0;
-uint8_t SPI0Class::interruptSave = 0;
+uint8_t SPIClass::initialized = 0;
+uint8_t SPIClass::interruptMode = 0;
+uint8_t SPIClass::interruptMask = 0;
+uint8_t SPIClass::interruptSave = 0;
 #ifdef SPI_TRANSACTION_MISMATCH_LED
-uint8_t SPI0Class::inTransactionFlag = 0;
+uint8_t SPIClass::inTransactionFlag = 0;
 #endif
 
-void SPI0Class::begin()
+void SPIClass::begin()
 {
   uint8_t sreg = SREG;
   noInterrupts(); // Protect from a scheduler and prevent transactionBegin
@@ -64,7 +64,7 @@ void SPI0Class::begin()
   SREG = sreg;
 }
 
-void SPI0Class::end() {
+void SPIClass::end() {
   uint8_t sreg = SREG;
   noInterrupts(); // Protect from a scheduler and prevent transactionBegin
   // Decrease the reference counter
@@ -118,7 +118,7 @@ void SPI0Class::end() {
   #endif
 #endif
 
-void SPI0Class::usingInterrupt(uint8_t interruptNumber)
+void SPIClass::usingInterrupt(uint8_t interruptNumber)
 {
   uint8_t mask = 0;
   uint8_t sreg = SREG;
@@ -158,7 +158,7 @@ void SPI0Class::usingInterrupt(uint8_t interruptNumber)
   SREG = sreg;
 }
 
-void SPI0Class::notUsingInterrupt(uint8_t interruptNumber)
+void SPIClass::notUsingInterrupt(uint8_t interruptNumber)
 {
   // Once in mode 2 we can't go back to 0 without a proper reference count
   if (interruptMode == 2)
