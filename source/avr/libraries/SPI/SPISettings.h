@@ -69,7 +69,7 @@
   #define SPI_AVR_EIMSK  GIMSK
 #endif
 
-// // Bit values are identical for SPI0 and SPI1.
+// Bit values are identical for SPI0 and SPI1.
 #define SPR0  SPR00
 #define SPR1  SPR01
 #define CPHA  CPHA0
