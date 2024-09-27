@@ -70,19 +70,17 @@
 #endif
 
 // // Bit values are identical for SPI0 and SPI1.
-// #define SPR0  SPR00
-// #define SPR1  SPR01
-// #define CPHA  CPHA0
-// #define CPOL  CPOL0
-// #define MSTR  MSTR0
-// #define DORD  DORD0
-// #define SPE  SPE0
-// #define SPIE  SPIE0
-// #define SPI2X  SPI2X0
-// #define WCOL  WCOL0
-// #define SPIF  SPIF0
-#define SPDR SPDR0
-#define SPSR SPSR0
+#define SPR0  SPR00
+#define SPR1  SPR01
+#define CPHA  CPHA0
+#define CPOL  CPOL0
+#define MSTR  MSTR0
+#define DORD  DORD0
+#define SPE  SPE0
+#define SPIE  SPIE0
+#define SPI2X  SPI2X0
+#define WCOL  WCOL0
+#define SPIF  SPIF0
 
 
 class SPISettings {
