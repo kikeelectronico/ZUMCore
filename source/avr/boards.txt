@@ -26,7 +26,7 @@ zum_core.bootloader.unlock_bits=0x3f
 zum_core.bootloader.lock_bits=0x0f
 zum_core.bootloader.tool=avrdude_no_signature
 
-zum_core.build.mcu=atmega328pb
+zum_core.build.mcu=atmega328p
 zum_core.build.f_cpu=16000000L
 zum_core.build.core=arduino
 zum_core.build.variant=zumcore
