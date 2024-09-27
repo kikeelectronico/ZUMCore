@@ -40,6 +40,47 @@
 #define TWI_SRX   3
 #define TWI_STX   4
 
+#define TWBR0   _SFR_MEM8(0xB8)
+
+#define TWSR0   _SFR_MEM8(0xB9)
+#define TWPS00  0
+#define TWPS01  1
+#define TWS03   3
+#define TWS04   4
+#define TWS05   5
+#define TWS06   6
+#define TWS07   7
+
+#define TWAR0   _SFR_MEM8(0xBA)
+#define TWGCE0  0
+#define TWA00   1
+#define TWA01   2
+#define TWA02   3
+#define TWA03   4
+#define TWA04   5
+#define TWA05   6
+#define TWA06   7
+
+#define TWDR0   _SFR_MEM8(0xBB)
+
+#define TWCR0   _SFR_MEM8(0xBC)
+#define TWIE0   0
+#define TWEN0   2
+#define TWWC0   3
+#define TWSTO0  4
+#define TWSTA0  5
+#define TWEA0   6
+#define TWINT0  7
+
+#define TWAMR0  _SFR_MEM8(0xBD)
+#define TWAM00  1
+#define TWAM01  2
+#define TWAM02  3
+#define TWAM03  4
+#define TWAM04  5
+#define TWAM05  6
+#define TWAM06  7
+
 typedef struct
 {
   volatile uint8_t *twbr; // bit rate register
@@ -71,40 +112,40 @@ twi_descriptor_t;
 extern twi_descriptor_t TWI0;
 extern twi_descriptor_t TWI1;
 
-// Register bit values are identical for TWI0 and TWI1.
-// status register bits
-#define TWPS0  TWPS00
-#define TWPS1  TWPS01
-#define TWS3  TWS03 
-#define TWS4  TWS04 
-#define TWS5  TWS05 
-#define TWS6  TWS06 
-#define TWS7  TWS07 
-// (slave) address register bits
-#define TWGCE  TWGCE0
-#define TWA0  TWA00 
-#define TWA1  TWA01 
-#define TWA2  TWA02 
-#define TWA3  TWA03 
-#define TWA4  TWA04 
-#define TWA5  TWA05 
-#define TWA6  TWA06 
-// control register bits
-#define TWIE  TWIE0 
-#define TWEN  TWEN0 
-#define TWWC  TWWC0 
-#define TWSTO  TWSTO0
-#define TWSTA  TWSTA0
-#define TWEA  TWEA0 
-#define TWINT  TWINT0
-// (slave) address mask register bits
-#define TWAM0  TWAM00
-#define TWAM1  TWAM01
-#define TWAM2  TWAM02
-#define TWAM3  TWAM03
-#define TWAM4  TWAM04
-#define TWAM5  TWAM05
-#define TWAM6  TWAM06
+// // Register bit values are identical for TWI0 and TWI1.
+// // status register bits
+// #define TWPS0  TWPS00
+// #define TWPS1  TWPS01
+// #define TWS3  TWS03 
+// #define TWS4  TWS04 
+// #define TWS5  TWS05 
+// #define TWS6  TWS06 
+// #define TWS7  TWS07 
+// // (slave) address register bits
+// #define TWGCE  TWGCE0
+// #define TWA0  TWA00 
+// #define TWA1  TWA01 
+// #define TWA2  TWA02 
+// #define TWA3  TWA03 
+// #define TWA4  TWA04 
+// #define TWA5  TWA05 
+// #define TWA6  TWA06 
+// // control register bits
+// #define TWIE  TWIE0 
+// #define TWEN  TWEN0 
+// #define TWWC  TWWC0 
+// #define TWSTO  TWSTO0
+// #define TWSTA  TWSTA0
+// #define TWEA  TWEA0 
+// #define TWINT  TWINT0
+// // (slave) address mask register bits
+// #define TWAM0  TWAM00
+// #define TWAM1  TWAM01
+// #define TWAM2  TWAM02
+// #define TWAM3  TWAM03
+// #define TWAM4  TWAM04
+// #define TWAM5  TWAM05
+// #define TWAM6  TWAM06
 
 void twi_init_twi0(void);
 void twi_init_twi1(void);
