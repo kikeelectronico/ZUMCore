@@ -164,7 +164,7 @@ private:
 
   uint8_t spcr;
   uint8_t spsr;
-  friend class SPIClass; // Allow SPIClass access to spcr & spsr.
+  friend class SPI0Class; // Allow SPI0Class access to spcr & spsr.
   friend class SPI1Class; // Allow SPI1Class access to spcr & spsr.
 };
 

@@ -15,7 +15,7 @@
 #ifndef _SPI0_H_
 #define _SPI0_H_
 
-class SPIClass {
+class SPI0Class {
 public:
   // Initialize the SPI library
   static void begin();
@@ -181,7 +181,7 @@ private:
   #endif
 };
 
-extern SPIClass SPI0;
+extern SPI0Class SPI0;
 #define SPI  SPI0
 
 #endif /* _SPI0_H_ */

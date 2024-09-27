@@ -46,14 +46,12 @@
 #  error "Include <avr/io.h> instead of this file."
 #endif
 
-#define _AVR_IOXXX_H_ "iom328pb.h"
-
-// #ifndef _AVR_IOXXX_H_
-// // CPV - was: #  define _AVR_IOXXX_H_ "iom328pb.h"
-// #  define _AVR_IOXXX_H_ "iom328pb.h"
-// #else
-// #  error "Attempt to include more than one <avr/ioXXX.h> file."
-// #endif
+#ifndef _AVR_IOXXX_H_
+// CPV - was: #  define _AVR_IOXXX_H_ "iom328pb.h"
+#  define _AVR_IOXXX_H_ "iom328pb.h"
+#else
+#  error "Attempt to include more than one <avr/ioXXX.h> file."
+#endif
 
 /* Registers and associated bit numbers */
 
