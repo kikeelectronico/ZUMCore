@@ -75,8 +75,8 @@
           },
           "url": "https://github.com/kikeelectronico/ZUMCore/releases/download/0.3.0.test.1/avr.zip",
           "archiveFileName": "avr.zip",
-          "checksum": "SHA-256:5fbaddd64bc1bcbfa6476c678531dab029b5b962348dbdfec83e0811b226fcde",
-          "size": "220105",
+          "checksum": "SHA-256:d712ce4a431da44ecce39392b026a4e9859c292666116921b387e647d96e0faa",
+          "size": "220090",
           "boards": [
             {
               "name": "Zum Core 2"
