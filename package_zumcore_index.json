@@ -4,7 +4,7 @@
       "name": "ZUM-Core",
       "maintainer": "BQ Educación",
       "websiteURL": "https://github.com/Bitbloq/ZUMCore",
-      "email": "soporte.bitbloq@bq.com",
+      "email": "soporte.bitbloq@bqeducacion.cc",
       "help": {
         "online": "https://www.bqeducacion.cc"
       },
@@ -66,7 +66,7 @@
           ]
         },
 	      {
-          "name": "ZUM Core",
+          "name": "Zum Core",
           "architecture": "avr",
           "version": "0.3.0",
           "category": "Contributed",
@@ -79,7 +79,7 @@
           "size": "220105",
           "boards": [
             {
-              "name": "ZUM Core"
+              "name": "Zum Core 2"
             }
           ],
           "toolsDependencies": [
